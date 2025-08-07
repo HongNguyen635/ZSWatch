@@ -29,6 +29,7 @@ endfunction()
 
 apply_patches("patches/zephyr" $ENV{ZEPHYR_BASE})
 apply_patches("patches/ext_drivers" ${CMAKE_SOURCE_DIR}/src/ext_drivers)
+apply_patches("patches/watch_dev" ${CMAKE_SOURCE_DIR}/boards/jakkra/zswatch)
 
 # Get the target hardware
 string(REGEX MATCH "zswatch@([0-9]+)/nrf5340.*" ZSWATCH_BOARD "${BOARD}")
