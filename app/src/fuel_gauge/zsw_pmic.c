@@ -67,7 +67,7 @@ static int64_t ref_time;
 static bool vbus_connected;
 
 static const struct battery_model battery_model = {
-#include "ld403533.inc"
+#include "LP402025_25C.inc"
 };
 
 static void zbus_activity_event_callback(const struct zbus_channel *chan)
